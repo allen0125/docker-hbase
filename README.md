@@ -18,5 +18,12 @@ docker-compose -f docker-compose-distributed-local.yml up -d
 
 This deployment will start Zookeeper, HMaster and HRegionserver in separate containers.
 
+# Add Hostname
+
+```
+0.0.0.0 hbase-master
+0.0.0.0 hbase-region
+```
+
 # Distributed
 To run distributed hbase on docker swarm see this [doc](./distributed/README.md):
